@@ -1,0 +1,5 @@
+1. https://github.com/OpenAccess-AI-Collective/axolotl
+2. https://openaccess-ai-collective.github.io/axolotl/docs/dataset-formats/
+3. https://github.com/ml-explore/mlx-examples/blob/main/llms/mlx_lm/LORA.md
+4. https://github.com/hiyouga/LLaMA-Factory
+5. https://github.com/h2oai/h2o-llmstudio
