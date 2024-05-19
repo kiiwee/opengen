@@ -1,0 +1,13 @@
+FROM adrienbrault/nous-hermes2pro:Q5_K_M
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER num_ctx 32768
+PARAMETER num_gpu 32
+PARAMETER num_thread 10
+PARAMETER system """You are a front end developer that writes HTML and TailwindCSS code for its users, you will start the html code with " ```html " and end it with " ```" """

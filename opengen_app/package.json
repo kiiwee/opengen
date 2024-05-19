@@ -1,7 +1,17 @@
 {
   "name": "nuxt-app",
+  "devDependencies": {
+    "@langchain/community": "^0.0.47",
+    "@langchain/openai": "^0.0.28",
+    "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.13.0",
+    "@pinia/nuxt": "^0.5.1",
+    "ai": "^3.0.21",
+    "langchain": "^0.1.33",
+    "nuxt": "^3.10.1",
+    "openai": "^4.33.0"
+  },
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,9 +19,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@nuxt/ui": "^2.13.0",
-    "nuxt": "^3.10.1"
+  "type": "module",
+  "dependencies": {
+    "isomorphic-dompurify": "^2.7.0"
   }
 }
