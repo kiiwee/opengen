@@ -35,81 +35,74 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
-
+This repository contains the web application for the project and all relevant notebooks used to research the topics around the project.
+The application uses a fine tuned model aimed at TailwindCSS
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
+Software needed to run the project
 ```
-Give examples
+python
+bun
+ollama
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
-
+Start the WebApp in dev mode
+1. Go to the app
 ```
-Give the example
+cd opengen_app
 ```
-
-And repeat
-
+2. Install dependencies 
 ```
-until finished
+bun install
 ```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+3. Run the development server
 ```
-Give an example
+bun run dev
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+Setup Ollama with modelfile:
+1. In The repository run this command to download the model and set it up with the ModelFile
 ```
-Give an example
+ollama create choose-a-model-name -f <location of the file e.g. ./Modelfile>'
+```
+2. Start the inference server
+```
+ollama serve
 ```
 
-## 🎈 Usage <a name="usage"></a>
+### Demo photos 🔧🔧🔧 WIP 🔧🔧🔧
 
-Add notes about how to use the system.
 
+## 🎈 Usage 
+
+After starting the Ollama server and the WebApp you can go to the application in localhost and start prompting for results!
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+🔧🔧🔧 WIP 🔧🔧🔧
 
 ## ⛏️ Built Using <a name = "built_using"></a>
+🔧🔧🔧 WIP 🔧🔧🔧
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
+
 - [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Authors <a name = "authors"></a>
+
+## ✍️ Authors 
 
 - [@kiiwee](https://github.com/kiiwee) - Idea & Initial work
 - [@kiseloMlyako](https://github.com/kiseloMlyako) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+## 🎉 Acknowledgements 
 
 - Hat tip to anyone whose code was used
 - Inspiration
