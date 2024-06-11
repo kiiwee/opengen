@@ -95,14 +95,14 @@ After starting the Ollama server and the WebApp you can go to the application in
 - [VueJs](https://vuejs.org/) - Web Framework
 
 
-## ✍️ Authors 
+## ✍️ Authors <a name = "authors"></a>
 
 - [@kiiwee](https://github.com/kiiwee) - Idea & Initial work
 - [@kiseloMlyako](https://github.com/kiseloMlyako) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-## 🎉 Acknowledgements 
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
 - Hat tip to anyone whose code was used
 - Inspiration
