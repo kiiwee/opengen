@@ -24,11 +24,11 @@
 ## 📝 Table of Contents
 
 - [About](#about)
+- [TODO](#todo)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
@@ -37,6 +37,14 @@
 
 This repository contains the web application for the project and all relevant notebooks used to research the topics around the project.
 The application uses a fine tuned model aimed at TailwindCSS
+## 🔧🔧🔧 TODO 🔧🔧🔧 <a name = "todo"></a>
+- Data Synthesis from scrapped components
+- Data set creation
+- LoRa Adapter training
+- Evaluation
+- Model Fuse
+- Fixes on the front end
+- 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
