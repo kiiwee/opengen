@@ -71,7 +71,7 @@ bun run dev
 Setup Ollama with modelfile:
 1. In The repository run this command to download the model and set it up with the ModelFile
 ```
-ollama create choose-a-model-name -f <location of the file e.g. ./Modelfile>'
+ollama create hermes -f ./Modelfile
 ```
 2. Start the inference server
 ```
