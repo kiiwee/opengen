@@ -15,7 +15,7 @@ export default defineLazyEventHandler(async () => {
         const { messages,body } = await readBody(event);
         // Ask OpenAI for a streaming chat completion given the prompt
         const response = await streamText({
-            model: openai('adrienbrault/nous-hermes2pro-llama3-8b:f16'),
+            model: openai('Llama3-fine-tune-tailwind'),
             system: 'You are a helpful coding assistant that only returns HTML and TailWind CSS code upon the users request. You SHOULD ONLY RESPOND WITH THE CODE. ALWAYS ADD THIS SCRIPT TAG TO THE HEAD  TO ADD TAILWINDCSS  <script src="https://cdn.tailwindcss.com"></script>"',
             temperature:0.1,
             messages:messages,
