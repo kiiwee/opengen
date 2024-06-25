@@ -1,5 +1,5 @@
 <template>
-    <div class=" containter h-screen  bg-slate-100 w-full max-h-full max-w-7xl">
+    <div class=" containter  h-full bg-slate-100   ">
         <UTabs :unmount="true" :items="items" @change="onChange">
             <template #default="{ item, index, selected }">
                 <div class="flex items-center gap-2 relative truncate">
@@ -13,18 +13,19 @@
             </template>
 
         </UTabs>
-        <div class=" ">
-            <div v-if="codeUI == 'UI'" class="h-screen">
-                <iframe class="w-full max-h-full h-screen " :srcdoc="iframeSrc"
+        <div class="flex h-full">
+            <div v-if="codeUI == 'UI'" class="flex w-screen h-screen">
+                <iframe class="w-full max-h-screen h-full " :srcdoc="iframeSrc"
                     title="W3Schools Free Online Web Tutorials"></iframe>
 
             </div>
-            <div v-if="codeUI == 'Code'" class="max-h-fit h-screen">
+            <div v-if="codeUI == 'Code'" class="w-fit">
                 {{ iframeSrc }}
             </div>
 
         </div>
-        <PromptInput :chatid="props.chatid" class="h-fit"></PromptInput>
+
+        <PromptInput :chatid="props.chatid" class=""></PromptInput>
 
     </div>
 
@@ -107,7 +108,7 @@ function log(){
     }
 
 }
-iframeSrc.value="<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>"
+iframeSrc.value=""
 // iframeSrc.value=JSON.parse(messages.value[messages.value.length -1].content.replace(/\n/g, '')).html
 // iframeSrc.value = JSON.parse(messages.value[-1].content).html
 // watch(messages, (newVal, oldVal) => {

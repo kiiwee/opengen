@@ -4,55 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detailed Admin Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>SaaS Landing Page</title>
 </head>
 
-<body> <!-- Header -->
-    <header class="bg-gray-800 text-white p-4">
-        <div class="container mx-auto flex justify-between">
-            <div>
-                <h1 class="text-2xl font-bold">Detailed Admin Page</h1>
+<body class="bg-gray-100"> <!-- Hero Section -->
+    <div class="relative w-full h-96 bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=10')">
+        <div class="absolute inset-y-0 w-full h-full bg-black opacity-50"></div>
+        <div class="absolute inset-y-0 left-0 w-full p-8 text-white">
+            <h1 class="text-4xl font-bold">Your SaaS Product Name</h1>
+            <p class="mt-3 text-lg">Discover the power of your product with our all-in-one solution.</p>
+        </div>
+    </div> <!-- Pricing Section -->
+    <div class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-900">Pricing</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6"> <!-- Basic Plan -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold text-gray-900">Basic Plan</h3>
+                        <p class="mt-2 text-gray-600">$0<span class="text-sm text-gray-500">/month</span></p>
+                    </div>
+                    <ul class="divide-y divide-gray-300">
+                        <li class="p-6"> <span class="text-gray-900 font-medium">Feature 1</span> <span
+                                class="ml-auto text-gray-600 font-semibold">Included</span> </li>
+                        <li class="p-6"> <span class="text-gray-900 font-medium">Feature 2</span> <span
+                                class="ml-auto text-gray-600 font-semibold">Included</span> </li>
+                        <li class="p-6"> <span class="text-gray-900 font-medium">Feature 3</span> <span
+                                class="ml-auto text-gray-600 font-semibold">Not Included</span> </li>
+                    </ul>
+                    <div class="p-6 text-center"> <a href="#"
+                            class="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium rounded-lg py-3 px-4">Get
+                            Started</a> </div>
+                </div> <!-- Pro Plan -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold text-gray-900">Pro Plan</h3>
+                        <p class="mt-2 text-gray-600">$29<span class="text-sm text-gray-500">/month</span></p>
+                    </div>
+                    <ul class="divide-y divide-gray-300">
+                        <li class="p-6"> <span class="text-gray-900 font-medium">Feature 1</span> <span
+                                class="ml-auto text-gray-600 font-semibold">Included</span> </li>
+                        <li class="p-6"> <span class="text-gray-900 font-medium">Feature 2</span> <span
+                                class="ml-auto text-gray-600 font-semibold">Included</span> </li>
+                        <li class="p-6"> <span class="text-gray-900 font-medium">Feature 3</span> <span
+                                class="ml-auto text-gray-600 font-semibold">Included</span> </li>
+                    </ul>
+                    <div class="p-6 text-center"> <a href="#"
+                            class="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium rounded-lg py-3 px-4">Get
+                            Started</a> </div>
+                </div>
             </div>
-            <div>
-                <ul class="flex items-center space-x-4">
-                    <li><a href="#" class="text-gray-400 hover:text-white">Dashboard</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Settings</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Profile</a></li>
+        </div>
+    </div> <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto p-4">
+            <div class="flex justify-between items-center">
+                <div> <a href="#" class="text-xl font-semibold">Your SaaS Product Name</a> </div>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Pricing</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </header> <!-- Main Content -->
-    <main class="container mx-auto p-4 mt-8">
-        <h2 class="text-3xl font-semibold mb-6">Manage Users</h2>
-        <div class="overflow-x-auto -mx-4">
-            <table class="w-full border-collapse">
-                <thead>
-                    <tr class="bg-gray-100">
-                        <th class="text-left px-4 py-2 border-b-2 border-gray-300">ID</th>
-                        <th class="text-left px-4 py-2 border-b-2 border-gray-300">Name</th>
-                        <th class="text-left px-4 py-2 border-b-2 border-gray-300">Email</th>
-                        <th class="text-left px-4 py-2 border-b-2 border-gray-300">Role</th>
-                        <th class="text-left px-4 py-2 border-b-2 border-gray-300">Actions</th>
-                    </tr>
-                </thead>
-                <tbody> <!-- User row -->
-                    <tr class="bg-white odd:bg-gray-50 hover:bg-gray-100">
-                        <td class="px-4 py-2 border-b-2 border-gray-300">1</td>
-                        <td class="px-4 py-2 border-b-2 border-gray-300">John Doe</td>
-                        <td class="px-4 py-2 border-b-2 border-gray-300">john.doe@example.com</td>
-                        <td class="px-4 py-2 border-b-2 border-gray-300">Admin</td>
-                        <td class="px-4 py-2 border-b-2 border-gray-300"> <a href="#"
-                                class="text-blue-500 hover:text-blue-700 mr-2">Edit</a> <button
-                                class="text-red-500 hover:text-red-700">Delete</button> </td>
-                    </tr> <!-- End user row --> <!-- More rows following the same structure... -->
-                </tbody>
-            </table>
-        </div>
-    </main> <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-4">
-        <div class="container mx-auto"> &copy; 2023 Your Company. All rights reserved. </div>
     </footer>
 </body>
 
-</html>```
+</html>

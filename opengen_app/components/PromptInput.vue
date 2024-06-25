@@ -1,11 +1,12 @@
 <template>
     <!-- Button above input -->
-    <div class="relative  w-full items-center">
-        <div class="absolute inset-x-0 bottom-0">
+     
+    <div class=" absolute inset-x-96 bottom-10 items-center ">
+        <div class=" w-full">
 
 
-            <div class="mt-4 flex justify-center">
-                <button  @click="reload" 
+            <div class="mt-4 flex justify-center ">
+                <button @click="reload"
                     class="inline-flex items-center gap-x-2 rounded-lg bg-slate-200 p-2 text-xs text-slate-600 hover:bg-blue-600 hover:text-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-blue-600 sm:text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
